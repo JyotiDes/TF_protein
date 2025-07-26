@@ -64,4 +64,4 @@ The output file `ABF2_result.txt` located at `output/` directory contains the pe
 If you use DeepBind in your research, please cite the following paper:</br>
 
 "[PTF-Vāc: Ab-initio discovery of plant transcription factors binding sites using explainable and generative deep co-learning encoders-decoders](https://www.biorxiv.org/content/10.1101/2024.01.28.577608v2.full)",<br/>
-bioRxiv.
+bioRxiv
