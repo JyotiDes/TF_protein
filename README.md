@@ -1,5 +1,5 @@
 <p align="center">
-<img src="Figure 11.png" width="500" height="300">
+<img src="Figure 11.png" width="500" height="500">
 </p>
 <p align="center"><b>Figure: The model workflow</b></p>
 
