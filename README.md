@@ -20,7 +20,7 @@ Run command to install pytorch
 ```
 python3 -m pip install --pre torch torchvision -f https://download.pytorch.org/whl/nightly/cu111/torch_nightly.html -U
 ```
-Download and extract the source code for DeepBind and move to parent directory, type following commands:
+Download and extract the source code for TF_protein and move to parent directory, type following commands:
 
 ```
 unzip TF_protein.zip
@@ -41,7 +41,7 @@ unzip TF_protein.zip
 #### 2.1 Data processing
 In this part, we will first introduce the **data information** used in this model, then introduce the training **data formats**, and finally introduce how to create a data set that meets to build the model requirements.
 
-We have provided example data format compatible with DeepBind input data (DeepBind input data format: See `example/ABF2_pos.txt`. If you are trying to train DeepBind with your own data, please process your data into the same format as given in above example input data.
+We have provided example data format compatible with TF_protein input data (tf_protein input data format: See `example/ABF2_pos.txt`. If you are trying to train TF_protein with your own data, please process your data into the same format as given in above example input data.
 
 ## 3. Model Training Based on Convolutional Neural Network (CNN)
 #### 3.1 Training and testing 
@@ -51,7 +51,7 @@ All data input files need to be placed in the same folder before training, such 
 **Usage:**
 Run the following command in the parent directory:
 ```
-python3 deepbind.py ABF2
+python3 tf_protein.py ABF2
 ```
 **Output:** 
 
@@ -61,7 +61,7 @@ The output file `ABF2_result.txt` located at `output/` directory contains the pe
 
 ## Citation
 
-If you use DeepBind in your research, please cite the following paper:</br>
+If you use TF_protein in your research, please cite the following paper:</br>
 
 "[PTF-Vāc: Ab-initio discovery of plant transcription factors binding sites using explainable and generative deep co-learning encoders-decoders](https://www.biorxiv.org/content/10.1101/2024.01.28.577608v2.full)",<br/>
 bioRxiv
