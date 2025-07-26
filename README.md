@@ -6,3 +6,36 @@
 # Introduction
 
 Discovery of transcription factors (TFs) binding sites (TFBS) and their motifs in plants pose significant challenges due to high cross-species variability. The interaction between TFs and their binding sites is highly specific and context dependent. Most of the existing TFBS finding tools are not accurate enough to discover these binding sites in plants. They fail to capture the cross-species variability, interdependence between TF structure and its TFBS, and context specificity of binding. Since they are coupled to predefined TF specific model/matrix, they are highly vulnerable towards the volume and quality of data provided to build the motifs. All these software make a presumption that the user input would be specific to any particular TF which renders them of very limited uses. This all makes them hardly of any use for purposes like genomic annotations of newly sequenced species. Here, we report an explainable Deep Encoders-Decoders generative system, PTF-Vāc, founded on a universal model of deep co-learning on variability in binding sites and TF structure, PTFSpot, making it completely free from the bottlenecks mentioned above. It has successfully decoupled the process of TFBS discovery from the prior step of motif finding and requirement of TF specific motif models. Due to the universal model for TF:DNA interactions as its guide, it can discover the binding motifs in total independence from data volume, species and TF specific models. PTF-Vāc can accurately detect even the binding motifs for never seen before TF families and species, and can be used to define credible motifs from its TFBS report.
+
+## 1. Environment setup
+
+#### 1.1 Create and activate a new virtual environment
+
+Users have their own choice of how to install required packages. But to efficiently manage the installation packages, Anaconda is recommended. After installing Annocoda, it would also be an good option to use virtual environment in annocoda. `conda activate` can be used to activate a virtual environment, and then install required packages. If users want to exit the virtual environment, simply type `conda deactivate`. 
+
+#### 1.2 Install the package and other requirements
+
+Run command to install pytorch
+
+```
+python3 -m pip install --pre torch torchvision -f https://download.pytorch.org/whl/nightly/cu111/torch_nightly.html -U
+```
+Download and extract the source code for DeepBind and move to parent directory, type following commands:
+
+```
+unzip TF_protein.zip
+```
+#### 1.3 Software Requirements
+
+***software list***
+- python >=3.6
+- pytorch
+- numpy 
+- pandas
+- sklearn
+- scipy 
+- matplotlib
+
+## 2. Data information
+
+#### 2.1 Data processing
