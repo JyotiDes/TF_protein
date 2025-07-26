@@ -39,3 +39,29 @@ unzip TF_protein.zip
 ## 2. Data information
 
 #### 2.1 Data processing
+In this part, we will first introduce the **data information** used in this model, then introduce the training **data formats**, and finally introduce how to create a data set that meets to build the model requirements.
+
+We have provided example data format compatible with DeepBind input data (DeepBind input data format: See `example/ABF2_pos.txt`. If you are trying to train DeepBind with your own data, please process your data into the same format as given in above example input data.
+
+## 3. Model Training Based on Convolutional Neural Network (CNN)
+#### 3.1 Training and testing 
+**Input:** `ABF2_train.txt`, `ABF2_test.txt`. 
+All data input files need to be placed in the same folder before training, such as in `example/` directory.
+
+**Usage:**
+Run the following command in the parent directory:
+```
+python3 deepbind.py ABF2
+```
+**Output:** 
+
+**Final result** 
+The trained model and best hyperparameter, `ABF2_Model.pth` and `ABF2_best_hyperpamarameters.pth`, are saved in the `output/` directory, respectively. 
+The output file `ABF2_result.txt` located at `output/` directory contains the performance metrics of the test dataset.  
+
+## Citation
+
+If you use DeepBind in your research, please cite the following paper:</br>
+
+"[PTF-Vāc: Ab-initio discovery of plant transcription factors binding sites using explainable and generative deep co-learning encoders-decoders](https://www.biorxiv.org/content/10.1101/2024.01.28.577608v2.full)",<br/>
+bioRxiv.
