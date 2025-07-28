@@ -1,0 +1,2 @@
+sequence_ID	prediction	score
+tf	False	0.0074
